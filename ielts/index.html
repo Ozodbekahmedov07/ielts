@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Prep | Specialist Education Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/stayle.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card profile">
+            <img src="./qrkod/rasm.png" alt="rasm"
+                 style="width:200px; height:200px; border-radius:50%; object-fit:cover;">
+            <h1 class="brand-name">Elite Prep</h1>
+
+            <div class="description">
+                <span class="highlight">
+                    Preparation for top international universities. Our services include:
+                </span>
+            </div>
+
+            <div class="social-icons">
+                <a href="https://t.me/eliteprep_academy" class="social-icon" target="_blank"><i class="fab fa-telegram"></i></a>
+                <a href="https://wa.me/998886650022" class="social-icon" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="mailto:info@eliteprep.uz" class="social-icon" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a href="https://instagram.com/elite_prep" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/share/17EcEfzrKA/" class="social-icon" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://youtube.com/@eliteprep_academy" class="social-icon" target="_blank"><i class="fab fa-youtube"></i></a>
+
+                <a href="https://tiktok.com/@eliteprep_academy" class="social-icon" target="_blank"><i class="fab fa-tiktok"></i></a>
+       
+
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 style="text-align: center; margin-bottom: 20px; color: aliceblue;">Our Services</h2>
+            <div class="links">
+                <a href="#" class="link-button" onclick="openModal('tutoringModal')">
+                    <i class="fas fa-graduation-cap"></i>
+                    <div>
+                        <div>About Elite Prep</div>
+                        <small>Elite Prep haqida</small>
+                    </div>
+                </a>
+
+                <!-- ✅ Darajani aniqlash o'rniga matnli modal -->
+                <a href="#" class="link-button" onclick="openModal('levelInfoModal')">
+                    <i class="fas fa-file-alt"></i>
+                    <div>
+                        <div>Level determination</div>
+                        <small>Darajani aniqlash</small>
+                    </div>
+                </a>
+
+                <a href="#" class="link-button" onclick="openModal('admissionsModal')">
+                    <i class="fas fa-university"></i>
+                    <div>
+                        <div>Contact an EP</div>
+                        <small>Mutaxasis EP bilan bog‘lanish</small>
+                    </div>
+                </a>
+
+                <a href="#" class="link-button" onclick="openModal('programsModal')">
+                    <i class="fas fa-info-circle"></i>
+                    <div>
+                        <div>Tariffs</div>
+                        <small>Tariflar</small>
+                    </div>
+                </a>
+
+                <a href="#" class="link-button" onclick="openModal('consultationModal')">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <div>To connect</div>
+                        <small>Bog‘lanish uchun</small>
+                    </div>
+                </a>
+
+                <a href="#" class="link-button" onclick="openModal('successModal')">
+                    <i class="fas fa-users"></i>
+                    <div>
+                        <div>Student result</div>
+                        <small>Talabalar yutuqlari</small>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="card qr-section">
+            <h3 class="qrkdtext"> Loyiha direktori</h3>
+            <div class="qr-code">
+                <a href="https://t.me/refortravlex" target="_blank">
+                    <img src="./qrkod/telegram.png" alt="rasm">
+                </a>
+            </div>
+            <p class="qr-text">Director</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 ELITE PREP. All rights reserved.</p>
+    </footer>
+
+    <!-- ======== MODALLAR ======== -->
+    <div id="tutoringModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('tutoringModal')">&times;</span>
+            <h2>Academic Tutoring</h2>
+            <p>We provide K-12 and College level tutoring to help students succeed in their studies.</p>
+        </div>
+    </div>
+
+    <!-- ✅ Yangi modal: Darajani aniqlash haqida -->
+    <div id="levelInfoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('levelInfoModal')">&times;</span>
+            <h2>Level determination</h2>
+            <p>dajaingizni aniqlash uchun mutaxasis blan bog'laning</p>
+            <p><a href="https://t.me/specialist_EP" target="_blank">👉 Mutaxassis bilan bog‘lanish</a></p>
+        </div>
+    </div>
+<div class=""></div>
+    <div id="admissionsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('admissionsModal')">&times;</span>
+            <h2>College Admissions</h2>
+            <p><a href="https://t.me/specialist_EP" target="_blank">Specialist EP</a></p>
+        </div>
+    </div>
+
+    <div id="programsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('programsModal')">&times;</span>
+            <h2>About Our Programs</h2>
+            <p>Vaqtinchalik ma’lumot yo‘q.</p>
+        </div>
+    </div>
+
+    <div id="consultationModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('consultationModal')">&times;</span>
+            <h2>Schedule Consultation</h2>
+            <a href="tel:+998886650022">+998 (88) 665 00 22</a>
+        </div>
+    </div>
+
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('successModal')">&times;</span>
+            <h2>Success Stories</h2>
+            <p>Vaqtinchalik ma’lumot yo‘q.</p>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,246 @@
+:root {
+  --top: #4ea5ff;
+  --bottom: #012d5c;
+  --text: #fff;
+  --light: rgba(255, 255, 255, 0.2);
+  --shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  --transition: all 0.3s ease;
+  --accent: #ffffff;
+}
+
+/* GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(-45deg, #4ea5ff, #0285ff, #5f72be, #000000);
+  background-size: 400% 400%;
+  animation: gradientMove 5s ease infinite;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }}
+/* CARD ASOSIY KONTEYNER */
+.container {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+/* PROFIL KARTOCHKA */
+.card.profile {
+  background: transparent;
+  box-shadow: none;
+}
+
+
+.brand-name {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+.qrkdtext{
+  color: #f1f1f1;
+}
+.description {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 10px 15px;
+  font-size: 0.9rem;
+  color: #f1f1f1;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  font-weight: 500;
+}
+
+/* SOCIAL ICONS */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.social-icon {
+  width: 45px;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.3rem;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.social-icon:hover {
+  background: #eeeef2;
+  color: #15599d;
+  transform: translateY(-4px);
+}
+
+/* LINK BUTTONLAR */
+.card {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: var(--shadow);
+  width: 100%;
+  transition: var(--transition);
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.link-button {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  background: transparent;
+  border: 2px solid var(--accent);
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 15px;
+  transition: var(--transition);
+}
+
+.link-button:hover {
+  background: #f5f8fb;
+  color: #1e75af;
+  transform: translateY(-3px);
+}
+
+.link-button i {
+  font-size: 1.4rem;
+  width: 30px;
+  text-align: center;
+}
+
+.link-button small {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+/* QR KOD BO'LIMI */
+.qr-section {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.qr-code {
+  width: 100%;
+  height: 60px;
+  
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px auto;
+  box-shadow: var(--shadow);
+  transition: 0.3s;
+}
+
+.qr-code:hover {
+  transform: scale(1.05);
+}
+
+.qr-code img {
+  width: 50px;
+  background-color: #e0e5e7;
+  height: 50px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.qr-text {
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 30px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.85rem;
+}
+
+/* MODAL DESIGN */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  background: #fff;
+  color: #000;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 12px;
+  width: 85%;
+  max-width: 400px;
+  box-shadow: var(--shadow);
+}
+
+.close {
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: red;
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+  body {
+    padding: 20px;
+  }
+  .card {
+    padding: 20px;
+  }
+  .brand-name {
+    font-size: 1.7rem;
+  }
+}
