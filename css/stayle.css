@@ -144,7 +144,8 @@ body {
 
 .link-button i {
   font-size: 1.4rem;
-  width: 30px;
+  width: 100px;
+  
   text-align: center;
 }
 
